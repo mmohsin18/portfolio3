@@ -22,7 +22,7 @@ export default async function RootLayout({
           <div className='bg-red-300 mx-0'>
               <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" />
           </div>
-          <div className='grid grid-cols-4 mt-3 py-3 mx-8 mb-4'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-4 mt-3 py-3 mx-8 mb-4'>
             <div>
               <img className='ml-3' src="https://i.postimg.cc/kMZ8MBFN/IMG-0928.png" alt="hello" width="100" />
             </div>
