@@ -1,11 +1,12 @@
 import { PortableTextBlock } from "sanity"
 
 export type Pages = {
-  _id: string,
-  _createdAt: Date,
-  title: string,
-  slug: string,
+  title: string;
+  _id: string;
+  createdAt: Date;
+  name: string;
+  slug: string;
   image: string;
   url: string;
-  content: PortableTextBlock[]
+  content: PortableTextBlock[];
 };
