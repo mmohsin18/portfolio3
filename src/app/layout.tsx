@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
               <Link className='bg-red-600 px-4 py-2 text-lg rounded-3xl' href="mailto:mmohsin0804@gmail.com">Contact</Link>
             </div>
             </div>
-          <div className='w-100 mx-8 h-10 flex items-center justify-between'>
+          <div className='w-100 mx-8 mb-4 h-10 flex items-center justify-between'>
             <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/">HOME</Link>
             <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/videos">VIDEOS</Link>
             <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/programming">PROGRAMMING</Link>
@@ -41,7 +42,7 @@ export default function RootLayout({ children }) {
           </div>
 
         </header>
-        <div>
+        <div className="mb-20">
           {children}
         </div>
         <footer className='text-zinc-400'>
