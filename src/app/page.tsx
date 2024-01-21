@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { createClient } from "next-sanity";
 
 export default function Home() {
   return (
@@ -7,4 +8,6 @@ export default function Home() {
       
     </main>
   );
+
+
 }
