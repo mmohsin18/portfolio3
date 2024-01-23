@@ -1,22 +1,16 @@
-import { defineConfig } from "sanity";
-import {deskTool} from "sanity/desk"
-import { schemaTypes } from "./sanity/schemas";
-
+import { defineConfig } from 'sanity';
+import { deskTool } from 'sanity/desk';
+import schemas from "./sanity/schemas"
 
 const config = defineConfig({
-    name: 'default',
-    title: 'Portfolio Editor',
-    basePath: "/admin",
-
-    projectId: 'drfbrkbl',
-    dataset: 'production',
-    
-    plugins: [deskTool()],
-
-    schema: {
-        types: schemaTypes,
-    },
+  projectId: "zjpjwek5",
+  dataset: "production",
+  title: "My Personal Website",
+  apiVersion: "2024-01-14",
+  basePath: "/admin",
+  plugins: [deskTool()],
+  schema: { types: schemas },
+  useCdn: true,
 })
 
-
-export default config;
+export default config
