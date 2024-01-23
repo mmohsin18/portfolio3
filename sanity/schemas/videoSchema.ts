@@ -9,17 +9,10 @@ export default {
           title: 'Video Title'
       },
       {
-              title: 'Slug',
-              name: 'slug',
-              type: 'slug',
-              options: {
-                source: 'title',
-                maxLength: 200, // will be ignored if slugify is set
-                slugify: input => input
-                                     .toLowerCase()
-                                     .replace(/\s+/g, '-')
-                                     .slice(0, 200)
-              }
+        name: "slug",
+        title: "Slug",
+        type: "slug",
+        options: { source: "name" }
       },
       {
           name: 'content',
@@ -27,24 +20,17 @@ export default {
           title: 'Content'
       },
       {
-          title: 'Poster',
-          name: 'poster',
-          type: 'image',
-          options: {
-            hotspot: true // <-- Defaults to false
-          },
-          fields: [
-            {
-              name: 'caption',
-              type: 'string',
-              title: 'Caption',
-            },
-            {
-              name: 'attribution',
-              type: 'string',
-              title: 'Attribution',
-            }
-          ]
+        name: "image",
+        title: "Image",
+        type: "image",
+        options: { hotspot: true },
+        fields: [
+          {
+            name: "alt",
+            title: "Alt",
+            type: "string"
+          }
+        ]
       },
       {
           title: 'Launch Scheduled At',
@@ -52,12 +38,9 @@ export default {
           type: 'datetime'
       },
       {
-          title: 'Link',
-          name: 'href',
-          type: 'url',
-          validation: Rule => Rule.uri({
-            scheme: ['http', 'https', 'mailto', 'tel']
-          })
-      }
+        name: "url",
+        title: "URL",
+        type: "url"
+      },
   ]
 }

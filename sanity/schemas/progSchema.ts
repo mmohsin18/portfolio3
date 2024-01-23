@@ -9,17 +9,10 @@ export default {
             title: 'Project Title'
         },
         {
-            title: 'Slug',
-            name: 'slug',
-            type: 'slug',
-            options: {
-              source: 'title',
-              maxLength: 200, // will be ignored if slugify is set
-              slugify: input => input
-                                   .toLowerCase()
-                                   .replace(/\s+/g, '-')
-                                   .slice(0, 200)
-            }
+          name: "slug",
+          title: "Slug",
+          type: "slug",
+          options: { source: "name" }
         },
         {
             title: 'Launch Scheduled At',
@@ -27,30 +20,17 @@ export default {
             type: 'datetime'
         },
         {
-            title: 'Poster',
-            name: 'poster',
-            type: 'image',
-            options: {
-              hotspot: true // <-- Defaults to false
-            },
-            metadata: {
-                "dimensions": {
-                  "height": 470,
-                  "width": 750
-                },
-            },
-            fields: [
-              {
-                name: 'caption',
-                type: 'string',
-                title: 'Caption',
-              },
-              {
-                name: 'attribution',
-                type: 'string',
-                title: 'Attribution',
-              }
-            ]
+          name: "image",
+          title: "Image",
+          type: "image",
+          options: { hotspot: true },
+          fields: [
+            {
+              name: "alt",
+              title: "Alt",
+              type: "string"
+            }
+          ]
         },
         {
             name: 'content',
@@ -63,12 +43,9 @@ export default {
             title: 'Used Language'
         },
         {
-            title: 'Link',
-            name: 'href',
-            type: 'url',
-            validation: Rule => Rule.uri({
-              scheme: ['http', 'https', 'mailto', 'tel']
-            })
-        }
+          name: "url",
+          title: "URL",
+          type: "url"
+        },
     ]
 }
