@@ -22,19 +22,19 @@ export default async function RootLayout({
           <div className='bg-red-300 mx-0'>
               <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" />
           </div>
-          <div className='grid grid-cols-4 mt-3 py-3 mx-8 mb-4'>
+          <div className='flex flex-col mt-3 py-3 mx-8 mb-4 justify-between lg:flex-row'>
             <div>
-              <img className='ml-3' src="https://i.postimg.cc/kMZ8MBFN/IMG-0928.png" alt="hello" width="100" />
+              <img className='ml-0 lg:ml-3' src="https://i.postimg.cc/kMZ8MBFN/IMG-0928.png" alt="hello" width="100" />
             </div>
             <div className='flex flex-col items-start justify-center'>
               <h1 className='font-bold'>Muhammad Mohsin</h1>
               <h5>I make your boring clips to something more enjoyable !!</h5>
             </div>
-            <div></div>
-            <div className='flex items-center justify-center'>
+            <div className='w-36'></div>
+            <div className='flex items-center mr-7 justify-center'>
               <Link className='bg-red-600 px-4 py-2 text-lg rounded-3xl' href="mailto:mmohsin0804@gmail.com">Contact</Link>
             </div>
-            </div>
+          </div>
           <div className='w-100 mx-8 h-10 flex items-center justify-between'>
             <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/">HOME</Link>
             <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/videos">VIDEOS</Link>
@@ -48,7 +48,7 @@ export default async function RootLayout({
         <main className="py-20">{children}</main>
 
         <footer className='text-zinc-400'>
-          <p className='flex items-center justify-center'>CopyRight &#169; 2023 Muhammad Mohsin  All Rights Reserved</p>
+          <p className='flex items-center text-sm justify-center'>CopyRight &#169; 2023 Muhammad Mohsin  All Rights Reserved</p>
         </footer>
       </body>
     </html>
