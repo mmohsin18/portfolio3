@@ -17,10 +17,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="py-10 bg-black">
-        <header className="flex flex-col text-white justify-between">
+        <header className="w-screen flex flex-col text-white justify-between">
           <Link href="/" className="uppercase mx-8 pb-6 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Muhammad Mohsin</Link>
-          <div className='bg-red-300 mx-0'>
-              <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" />
+          <div className='w-full object-cover mx-0'>
+              <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" className='w-screen'/>
           </div>
           <div className='flex flex-col mt-3 py-3 mx-8 mb-4 justify-between lg:flex-row'>
             <div>
@@ -35,14 +35,17 @@ export default async function RootLayout({
               <Link className='bg-red-600 px-4 py-2 text-lg rounded-3xl' href="mailto:mmohsin0804@gmail.com">Contact</Link>
             </div>
           </div>
-          <div className='w-100 mx-8 h-10 flex items-center justify-between'>
-            <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/">HOME</Link>
-            <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/videos">VIDEOS</Link>
-            <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/programming">PROGRAMMING</Link>
-            <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/skills">SKILLS</Link>
-            <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/about">ABOUT</Link>
-            <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/contact">CONTACT</Link>
+          <div className='w-screen overflow-x-auto'>
+            <div className='justify-start mx-8 h-10 flex gap-10 items-center lg:justify-between'>
+              <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/">HOME</Link>
+              <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/videos">VIDEOS</Link>
+              <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/programming">PROGRAMMING</Link>
+              <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/skills">SKILLS</Link>
+              <Link className='hover:text-red-600 hover:underline hover:text-xl transition-all font-bold' href="/about">ABOUT</Link>
+              <Link className='hover:text-red-600 hover:underline pr-8 lg:pr-0 hover:text-xl transition-all font-bold' href="/contact">CONTACT</Link>
+            </div>
           </div>
+          
 
         </header>
         <main className="py-20">{children}</main>
