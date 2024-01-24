@@ -3,51 +3,25 @@ import { Project } from "@/types/Project";
 import clientConfig from './config/client-config'
 import { Pages } from "@/types/Page";
 
-export async function getProjects(): Promise<Project[]> {
-  return createClient(clientConfig).fetch(
-    groq`*[_type == "project"]{
-      _id,
-      _createdAt,
-      name,
-      "slug": slug.current,
-      "image": image.asset->url,
-      url,
-      content
-    }`
-  )
-}
 
-export async function getProject(slug: string): Promise<Project> {
-  return createClient(clientConfig).fetch(
-    groq`*[_type == "project" && slug.current == $slug][0]{
-      _id,
-      _createdAt,
-      name,
-      "slug": slug.current,
-      "image": image.asset->url,
-      url,
-      content
-    }`,
-    { slug }
-  )
-}
 
-export async function getPages(): Promise<Pages[]> {
+export async function getProgs(): Promise<Pages[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "page"]{
+    groq`*[_type == "projects"]{
       _id,
       _createdAt,
       title,
       "slug": slug.current,
-      url,
       "image": image.asset->url,
+      url,
+      language
     }`
   )
 }
 
-export async function getPage(slug: string): Promise<Pages> {
+export async function getVids(): Promise<Pages> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "project" && slug.current == $slug][0]{
+    groq`*[_type == "videos"]{
       _id,
       _createdAt,
       name,
@@ -55,7 +29,39 @@ export async function getPage(slug: string): Promise<Pages> {
       "image": image.asset->url,
       url,
       content
-    }`,
-    { slug }
+    }`
   )
 }
+
+
+export async function getCliVids(): Promise<Pages> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "videos" && category match "client"]{
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+      "image": image.asset->url,
+      url,
+      category,
+      content
+    }`
+  )
+}
+
+export async function getDocVids(): Promise<Pages> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "videos" && category match "documentation"]{
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+      "image": image.asset->url,
+      url,
+      category,
+      content
+    }`
+  )
+}
+
+console.log(getDocVids)

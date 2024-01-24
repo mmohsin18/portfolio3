@@ -42,5 +42,10 @@ export default {
         title: "URL",
         type: "url"
       },
+      {
+        name: 'category',
+        type: 'string',
+        title: 'Category'
+    }
   ]
 }
