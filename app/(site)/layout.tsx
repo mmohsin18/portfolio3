@@ -16,7 +16,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="py-10 bg-black">
+      <body className="py-8 bg-black">
         <header className="w-screen flex flex-col text-white justify-between">
           <Link href="/" className="uppercase mx-8 pb-6 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Muhammad Mohsin</Link>
           <div className='w-full object-cover mx-0'>

@@ -64,4 +64,19 @@ export async function getDocVids(): Promise<Pages> {
   )
 }
 
+export async function getEditVids(): Promise<Pages> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "videos" && category match "edit"]{
+      _id,
+      _createdAt,
+      title,
+      "slug": slug.current,
+      "image": image.asset->url,
+      url,
+      category,
+      content
+    }`
+  )
+}
+
 console.log(getDocVids)
