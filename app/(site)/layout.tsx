@@ -16,13 +16,13 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="py-8 bg-black">
+      <body className="py-8 bg-black overflow-x-hidden">
         <header className="w-screen flex flex-col text-white justify-between">
           <Link href="/" className="uppercase mx-8 pb-6 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Muhammad Mohsin</Link>
           <div className='w-full object-cover mx-0'>
               <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" className='w-screen'/>
           </div>
-          <div className='flex flex-col mt-3 py-3 mx-8 mb-4 justify-between lg:flex-row'>
+          <div className='flex flex-col mt-3 py-3 mx-8 mb-4 gap-5 justify-between lg:flex-row'>
             <div>
               <img className='ml-0 lg:ml-3' src="https://i.postimg.cc/kMZ8MBFN/IMG-0928.png" alt="hello" width="100" />
             </div>
@@ -32,7 +32,7 @@ export default async function RootLayout({
             </div>
             <div className='w-36'></div>
             <div className='flex items-center mr-7 justify-center'>
-              <Link className='bg-red-600 px-4 py-2 text-lg rounded-3xl' href="mailto:mmohsin0804@gmail.com">Contact</Link>
+              <Link className='bg-red-600 px-4 py-2 text-lg rounded-3xl text-center w-full' href="mailto:mmohsin0804@gmail.com">Contact</Link>
             </div>
           </div>
           <div className='w-screen overflow-x-auto'>
@@ -50,7 +50,7 @@ export default async function RootLayout({
         </header>
         <main className="py-20">{children}</main>
 
-        <footer className='text-zinc-400'>
+        <footer className='text-zinc-400 w-screen'>
           <p className='flex items-center text-sm justify-center'>CopyRight &#169; 2023 Muhammad Mohsin  All Rights Reserved</p>
         </footer>
       </body>
