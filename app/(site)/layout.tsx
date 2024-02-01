@@ -23,16 +23,16 @@ export default async function RootLayout({
               <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" className='w-screen'/>
           </div>
           <div className='flex flex-col mt-3 py-3 mx-8 mb-4 gap-5 justify-between lg:flex-row'>
-            <div>
+            <div className=' flex items-center justify-center '>
               <img className='ml-0 lg:ml-3' src="https://i.postimg.cc/kMZ8MBFN/IMG-0928.png" alt="hello" width="100" />
             </div>
-            <div className='flex flex-col items-start justify-center'>
+            <div className='flex flex-col items-center text-center lg:text-left lg:items-start justify-center'>
               <h1 className='font-bold'>Muhammad Mohsin</h1>
               <h5>I make your boring clips to something more enjoyable !!</h5>
             </div>
             <div className='w-36'></div>
-            <div className='flex items-center mr-7 justify-center'>
-              <Link className='bg-red-600 px-4 py-2 text-lg rounded-3xl text-center w-full' href="mailto:mmohsin0804@gmail.com">Contact</Link>
+            <div className='flex w-full lg:w-fit items-center lg:mr-7 justify-center'>
+              <Link className='bg-red-600 px-7 py-2 text-lg rounded-3xl text-center w-full' href="mailto:mmohsin0804@gmail.com">Contact</Link>
             </div>
           </div>
           <div className='w-screen overflow-x-auto'>
