@@ -9,13 +9,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default async function Home() {
   const docvids = await getVids();
   return (
-    <div className=' px-20'>
+    <div className='px-11 md:px-20'>
       <div className='pt-10'>
-
+        
       </div>
       <div className=''>
-            <h2 className='text-3xl flex items-center mb-5 uppercase justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>Worked With</h2>
-            <div className='flex items-center gap-8 justify-center'>
+            <h2 className='text-2xl md:text-3xl flex items-center mb-5 uppercase justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>Worked With</h2>
+            <div className='flex items-center gap-3 md:gap-8 justify-center'>
               <a className='w-24 hover:scale-110 hover:transition-all ease-in-out' href="https://sgcd.edu.bd/hall-of-fame/">
                 <img className='rounded-full object-cover' src="https://i.postimg.cc/kXwT9nd2/Frame-6.png" alt="" />
               </a>

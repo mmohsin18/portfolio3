@@ -51,7 +51,7 @@ export default async function RootLayout({
         <main className="py-20">{children}</main>
 
         <footer className='text-zinc-400 w-screen'>
-          <p className='flex items-center text-sm justify-center'>CopyRight &#169; 2023 Muhammad Mohsin  All Rights Reserved</p>
+          <p className='flex items-center text-xs md:text-sm justify-center'>CopyRight &#169; 2023 Muhammad Mohsin  All Rights Reserved</p>
         </footer>
       </body>
     </html>
