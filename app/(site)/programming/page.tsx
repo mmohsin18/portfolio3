@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <div>
-      <div className="mt-5 px-20 grid md:grid-cols-2 lg:grid-cols-3 gap-8">{progs.map((prog) => (
+      <div className="mt-5 px-10 md:px-20 grid md:grid-cols-2 lg:grid-cols-3 gap-8">{progs.map((prog) => (
         <Link href={prog.url} key={prog._id} className="border-2 border-gray-500 rounded-lg p-4 hover:scale-105 hover:border-blue-500 transition">
           {prog.image && (
             <Image

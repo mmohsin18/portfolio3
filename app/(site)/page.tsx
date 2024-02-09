@@ -46,7 +46,7 @@ export default async function Home() {
       <div className='text-white'>
         <h2 className='text-3xl flex items-center mb-5 uppercase justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>services i offer</h2>
         <div className='flex flex-col px-10 lg:flex-row gap-6 items-center justify-center'>
-          <Card className='w-[80vw] lg:w-1/4'>
+          <Card className='w-[80vw] h-80 flex flex-col justify-between hover:scale-110 transition-all ease-in-out lg:w-1/4'>
             <CardHeader>
               <CardTitle>Video Editing</CardTitle>
               <CardDescription>Content Creation</CardDescription>
@@ -58,7 +58,7 @@ export default async function Home() {
               <Link className='border-2 border-red-600 px-4 py-2 text-lg rounded-3xl text-center w-full' href="/contact">Contact</Link>
             </CardFooter>
           </Card>
-          <Card className='w-[80vw] lg:w-1/4'>
+          <Card className='w-[80vw] h-80 flex flex-col justify-between hover:scale-110 transition-all ease-in-out lg:w-1/4'>
             <CardHeader>
               <CardTitle>Portfolio Website</CardTitle>
               <CardDescription>Web-Development</CardDescription>
@@ -70,7 +70,7 @@ export default async function Home() {
               <Link className='border-2 border-red-600 px-4 py-2 text-lg rounded-3xl text-center w-full' href="/contact">Contact</Link>
             </CardFooter>
           </Card>
-          <Card className='w-[80vw] lg:w-1/4'>
+          <Card className='w-[80vw] h-80 flex flex-col justify-between hover:scale-110 transition-all ease-in-out lg:w-1/4'>
             <CardHeader>
               <CardTitle>Blogging Website</CardTitle>
               <CardDescription>Web-Development</CardDescription>
@@ -82,7 +82,7 @@ export default async function Home() {
               <Link className='border-2 border-red-600 px-4 py-2 text-lg rounded-3xl text-center w-full' href="/contact">Contact</Link>
             </CardFooter>
           </Card>
-          <Card className='w-[80vw] lg:w-1/4'>
+          <Card className='w-[80vw] h-80 flex flex-col justify-between hover:scale-110 transition-all ease-in-out lg:w-1/4'>
             <CardHeader>
               <CardTitle className='text-xl'>E-commerce Website</CardTitle>
               <CardDescription>Web-Development</CardDescription>
