@@ -12,7 +12,7 @@ export default function Contact(){
         <div className="flex flex-col lg:flex lg:flex-row items-center justify-center border-2 w-fit px-8 lg:px-10 py-6 rounded-3xl gap-6">
           <div className="flex items-center justify-center gap-2 hover:scale-110 transition-all">
             <FaLinkedin size={32} color="white"/>
-            <a href="www.linkedin.com/in/mmohsin0804" className="text-white text-2xl">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/mmohsin0804/" className="text-white text-2xl">LinkedIn</a>
           </div>
           <div className="flex items-center justify-center gap-2 hover:scale-110 transition-all">
             <RiInstagramFill size={32} color="white" />
