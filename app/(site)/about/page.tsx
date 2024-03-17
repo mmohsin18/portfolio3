@@ -50,8 +50,10 @@ export default function Contact(){
                 </div>
             </div>
             <div className="w-[100%] lg:w-[30%]">
-                <h1 className="flex font-semibold items-center justify-center">North South University (CSE)</h1>
-                <h1></h1>
+                <h1 className="flex font-semibold mb-3 items-center justify-center">North South University (CSE)</h1>
+                <div className="flex flex-col gap-3">
+                    <h1>Probationary Member <br /><span className="text-zinc-400">NSU Debate Club</span></h1>
+                </div>
             </div>
         </div>
       </div>

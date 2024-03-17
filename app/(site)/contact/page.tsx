@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { FaFacebook } from "react-icons/fa6";
+import { FaBehanceSquare } from "react-icons/fa";
 
 
 export default function Contact(){
@@ -21,7 +23,24 @@ export default function Contact(){
         </div>
       </div>
       
-
+      <div className='mt-20 flex items-center justify-evenly'>
+        <a href='https://www.facebook.com/mmohsin1803' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+          <FaFacebook className='text-white' size={32} />
+          <h2 className='text-white'>Facebook</h2>
+        </a>
+        <a href='https://www.behance.net/mmohsin08' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+          <FaBehanceSquare className='text-white' size={32} />
+          <h2 className='text-white'>Behance</h2>
+        </a>
+        {/* <a href='' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+          <FaFacebook className='text-white' size={32} />
+          <h2 className='text-white'>Facebook</h2>
+        </a>
+        <a href='' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+          <FaFacebook className='text-white' size={32} />
+          <h2 className='text-white'>Facebook</h2>
+        </a> */}
+      </div>
       
     </div>
   )
