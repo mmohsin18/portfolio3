@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa6";
 import { FaBehanceSquare } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 
 export default function Contact(){
@@ -13,8 +14,8 @@ export default function Contact(){
       <div className="flex items-center justify-center">
         <div className="flex flex-col lg:flex lg:flex-row items-center justify-center border-2 w-fit px-8 lg:px-10 py-6 rounded-3xl gap-6">
           <div className="flex items-center justify-center gap-2 hover:scale-110 transition-all">
-            <FaLinkedin size={32} color="white"/>
-            <a href="https://www.linkedin.com/in/mmohsin0804/" className="text-white text-2xl">LinkedIn</a>
+            <SiGmail size={30} color="white"/>
+            <a href="mailto:mmohsin0804@gmail.com" className="text-white text-2xl">Gmail</a>
           </div>
           <div className="flex items-center justify-center gap-2 hover:scale-110 transition-all">
             <RiInstagramFill size={32} color="white" />
@@ -32,11 +33,11 @@ export default function Contact(){
           <FaBehanceSquare className='text-white' size={32} />
           <h2 className='text-white'>Behance</h2>
         </a>
-        {/* <a href='' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
-          <FaFacebook className='text-white' size={32} />
-          <h2 className='text-white'>Facebook</h2>
+        <a href='https://www.linkedin.com/in/mmohsin0804/' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+          <FaLinkedin className='text-white' size={32} />
+          <h2 className='text-white'>LinkedIn</h2>
         </a>
-        <a href='' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+        {/* <a href='' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
           <FaFacebook className='text-white' size={32} />
           <h2 className='text-white'>Facebook</h2>
         </a> */}

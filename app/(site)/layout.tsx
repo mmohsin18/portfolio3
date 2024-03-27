@@ -1,3 +1,4 @@
+import { Download } from 'lucide-react'
 import '../globals.css'
 import Link from "next/link"
 // import { getPages } from '@/sanity/sanity-utils';
@@ -19,8 +20,8 @@ export default async function RootLayout({
       <body className="py-8 bg-black overflow-x-hidden">
         <header className="w-screen flex flex-col text-white justify-between">
           <Link href="/" className="uppercase mx-8 pb-6 bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent text-lg font-bold">Muhammad Mohsin</Link>
-          <div className='w-full object-cover mx-0'>
-              <img src="https://i.postimg.cc/hv4CShLR/cover2.jpg" alt="cover" className='w-screen'/>
+          <div className='w-full h-64 overflow-hidden object-cover mx-0'>
+              <img src="https://i.postimg.cc/jdXQY2sD/9-SS0203-Copy.jpg" alt="cover" className='w-screen'/>
           </div>
           <div className='flex flex-col mt-3 py-3 mx-8 mb-4 gap-5 justify-between lg:flex-row'>
             <div className=' flex items-center justify-center '>
@@ -32,7 +33,7 @@ export default async function RootLayout({
             </div>
             <div className='w-36'></div>
             <div className='flex w-full lg:w-fit items-center lg:mr-7 justify-center'>
-              <Link className='bg-red-600 px-7 py-2 text-lg rounded-3xl text-center w-full' href="mailto:mmohsin0804@gmail.com">Contact</Link>
+              <Link className='bg-red-600 px-7 py-2 text-lg rounded-3xl text-center w-full' href='https://ufile.io/b50kt2bq'>Resume</Link>
             </div>
           </div>
           <div className='w-screen overflow-x-auto'>
