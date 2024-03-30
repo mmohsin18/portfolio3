@@ -58,10 +58,10 @@ export default function Contact(){
       {vid.map((editing, index) => (
         <div key={index} className='w-fit p-4 border-2 border-slate-400 rounded-lg'>
           <div className='bg-slate-200 my-3 w-44 rounded-lg overflow-hidden h-2'>
-            <div className={`bg-red-500 h-2 w-[${editing.skill}]`}></div>
+            <div className='bg-red-500 h-2' style={{ width: editing.skill }}></div>
           </div>
           <div className='flex justify-between items-center'>
-            <h6 className='font-bold w-[75%]'>{editing.name}</h6>
+            <h6 className='font-bold w-[70%]'>{editing.name}</h6>
             <h6 className='font-bold'>{editing.skill}</h6>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Contact(){
       {arr.map((artwork, index) => (
         <div key={index} className='w-fit p-4 border-2 border-slate-400 rounded-lg'>
           <div className='bg-slate-200 my-3 w-44 rounded-lg overflow-hidden h-2'>
-            <div className={`bg-red-500 h-2 w-[${artwork.skill}]`}></div>
+            <div className='bg-red-500 h-2' style={{ width: artwork.skill }}></div>
           </div>
           <div className='flex justify-between items-center'>
             <h6 className='font-bold w-[75%]'>{artwork.name}</h6>

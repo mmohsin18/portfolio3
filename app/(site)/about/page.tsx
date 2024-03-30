@@ -4,10 +4,21 @@ import { MdOutlineViewTimeline } from "react-icons/md"
 import { FaLaptopCode } from "react-icons/fa";
 
 
+const vid = [
+    {
+      position: 'Video Producer',
+      place: 'Aloroner Mishti Hashi',
+      time: '2021-Current'
+    }
+  ];
+
 export default function Contact(){
    return (
     <div className="text-white">
       <div className=" px-10 mb-10 lg:px-32">
+        <div className='w-full flex items-center justify-center mb-5'>
+            <img src="https://i.postimg.cc/QdJnzkhZ/IMG-2578.jpg" className='w-44 rounded-lg' alt="" />
+        </div>
         <h1 className="text-3xl flex items-center mb-5 justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">About Muhammad Mohsin</h1>
         <div className="flex flex-col justify-center lg:flex-row">
             <div className="text-center w-[100%] lg:text-right lg:w-[40%]">
@@ -58,6 +69,22 @@ export default function Contact(){
         </div>
       </div>
 
+      <div className=" p-10 lg:px-32">
+        <h1 className="text-3xl flex items-center mb-5 justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">Work Experience</h1>
+        <div className="flex gap-10 flex-col lg:flex lg:flex-row items-center justify-center">
+        {vid.map((vid, index) => (
+            <div key={index} className="rounded-lg flex justify-evenly border-2 border-zinc-500 px-4 py-3">
+                <div>
+                    <h4>{vid.position}</h4>
+                    <h4 className='text-zinc-400'>at {vid.place}</h4>
+                </div>
+                <div className='flex justify-center items-center'>
+                    <h5 className='ml-6'>{vid.time}</h5>
+                </div>
+            </div>
+        ))}
+        </div>
+      </div>
       
     </div>
   )

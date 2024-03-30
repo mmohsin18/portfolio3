@@ -8,6 +8,7 @@ export default async function Home() {
   const vids = await getVids();
   return (
     <div className='px-11 md:px-20'>
+      <h2 className='text-6xl flex items-center mb-5 uppercase justify-center py-28 font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>Coming Soon</h2>
       {/* <div className='py-5 scroll-px-8 w-screen gap-4 overflow-x-auto flex'>{vids.map((allvid) => (
         <Link href={allvid.url} key={allvid._id} className="border-2 border-gray-500 rounded-lg p-4 hover:scale-105 hover:border-blue-500 transition">
         {allvid.image && (
@@ -39,7 +40,7 @@ export default async function Home() {
               </a>
             </div>
       </div>
-      <div className=' py-14'>
+      {/* <div className=' py-14'>
         <h2 className='text-3xl flex items-center mb-5 uppercase justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>Photography</h2>
         <div className=' flex items-center justify-center'>
           <Carousel className='w-64'>
@@ -54,9 +55,9 @@ export default async function Home() {
             <CarouselNext className='text-white' />
           </Carousel>
         </div>
-      </div>
+      </div> */}
       <div className='text-white'>
-        <h2 className='text-3xl flex items-center mb-5 uppercase justify-center font-bold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent'>services i offer</h2>
+        
 
       </div>
       

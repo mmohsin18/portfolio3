@@ -5,6 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa6";
 import { FaBehanceSquare } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { FaYoutube } from "react-icons/fa";
 
 
 export default function Contact(){
@@ -25,22 +26,22 @@ export default function Contact(){
       </div>
       
       <div className='mt-20 flex items-center justify-evenly'>
-        <a href='https://www.facebook.com/mmohsin1803' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+        <a href='https://www.facebook.com/mmohsin1803' className='flex gap-4 items-center hover:scale-110 hover:tracking-wider w-fit transition-all'>
           <FaFacebook className='text-white' size={32} />
           <h2 className='text-white'>Facebook</h2>
         </a>
-        <a href='https://www.behance.net/mmohsin08' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+        <a href='https://www.behance.net/mmohsin08' className='flex gap-4 items-center hover:scale-110 hover:tracking-wider w-fit transition-all'>
           <FaBehanceSquare className='text-white' size={32} />
           <h2 className='text-white'>Behance</h2>
         </a>
-        <a href='https://www.linkedin.com/in/mmohsin0804/' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
+        <a href='https://www.linkedin.com/in/mmohsin0804/' className='flex gap-4 items-center hover:scale-110 hover:tracking-wider w-fit transition-all'>
           <FaLinkedin className='text-white' size={32} />
           <h2 className='text-white'>LinkedIn</h2>
         </a>
-        {/* <a href='' className='flex gap-4 items-center hover:scale-110 w-fit transition-all'>
-          <FaFacebook className='text-white' size={32} />
-          <h2 className='text-white'>Facebook</h2>
-        </a> */}
+        <a href='https://www.youtube.com/@thetimelineprojects' className='flex gap-4 items-center hover:scale-110 hover:tracking-wider w-fit transition-all'>
+          <FaYoutube className='text-white' size={32} />
+          <h2 className='text-white'>Youtube</h2>
+        </a>
       </div>
       
     </div>
